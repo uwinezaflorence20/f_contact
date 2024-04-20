@@ -49,8 +49,9 @@ export default function Update() {
   }
 
   return (
+    
     <div className="container mx-auto px-4">
-      <div className="max-w-md mx-auto mt-10 bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="max-w-md mx-auto mt-10 bg-black rounded-lg shadow-md overflow-hidden">
         <div className="p-4">
           <h1 className="text-3xl font-semibold mb-4">{contact.fullName}</h1>
           <form onSubmit={updateContact} className="flex flex-col gap-4">
@@ -83,7 +84,7 @@ export default function Update() {
             <div className="flex flex-col gap-2">
               <label htmlFor="phone" className="font-semibold">Phone</label>
               <input 
-                type="number" 
+                type="phone" 
                 name="phone"
                 minLength={10}
                 maxLength={10}
@@ -95,8 +96,8 @@ export default function Update() {
               />
             </div>
             
-            <button type="submit" className="mt-5 py-3 px-6 bg-blue-500 text-white rounded-lg text-base hover:bg-blue-600 transition duration-300">Update</button>
-            {message && <p className="bg-green-200 text-green-900 p-3 rounded-lg">{message}</p>}
+            <button type="submit" className="mt-5 py-3 px-6 bg-red-600 text-white rounded-lg text-base hover:bg-red-300 transition duration-300">Update</button>
+            {message && <p className="bg-gray-200 text-gray-900 p-3 rounded-lg">{message}</p>}
             {error && <p className="bg-red-200 text-red-900 p-3 rounded-lg">{error}</p>}
           </form>
         </div>

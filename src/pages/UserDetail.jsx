@@ -43,8 +43,8 @@ const Details = () => {
   
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="max-w-md mx-auto mt-10 bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="container mx-auto px-4 ">
+      <div className="max-w-md mx-auto mt-10 bg-black text-white rounded-lg shadow-md overflow-hidden">
         <div className="p-4">
           {message && <p className="bg-green-200 text-green-900 p-3 rounded-lg">{message}</p>}
           {error && <p className="bg-red-200 text-red-900 p-3 rounded-lg">{error}</p>}
@@ -56,13 +56,13 @@ const Details = () => {
             </div>
           </div>
           <div className="mt-4">
-            <p className="font-semibold">Email:</p>
+            <p className="font-bold">Email:</p>
             <p>{contact.email}</p>
-            <p className="font-semibold">Phone:</p>
+            <p className="font-bold">Phone:</p>
             <p>{contact.phone}</p>
-            <p className="font-semibold">Created on:</p>
+            <p className="font-bold">Created on:</p>
             <p>{new Date(contact.createdAt).toUTCString()}</p>
-            <p className="font-semibold">Updated on:</p>
+            <p className="font-bold">Updated on:</p>
             <p>{new Date(contact.updatedAt).toUTCString()}</p>
           </div>
         </div>
