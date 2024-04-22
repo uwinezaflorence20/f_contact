@@ -50,7 +50,7 @@ export default function Update() {
 
   return (
     
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <div className="max-w-md mx-auto mt-10 bg-black rounded-lg shadow-md overflow-hidden">
         <div className="p-4">
           <h1 className="text-3xl font-semibold mb-4">{contact.fullName}</h1>

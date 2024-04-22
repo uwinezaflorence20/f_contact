@@ -43,7 +43,7 @@ const Details = () => {
   
 
   return (
-    <div className="container mx-auto px-4 ">
+    <div className="container mx-auto px-4 pt-24">
       <div className="max-w-md mx-auto mt-10 bg-black text-white rounded-lg shadow-md overflow-hidden">
         <div className="p-4">
           {message && <p className="bg-green-200 text-green-900 p-3 rounded-lg">{message}</p>}

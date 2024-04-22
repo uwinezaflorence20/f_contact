@@ -3,6 +3,7 @@ import React from 'react';
 function WelcomePage() {
   return (
     <div >
+      {/* Navbar */}
       <nav className="bg-gray-800 p-4">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
@@ -17,6 +18,9 @@ function WelcomePage() {
           </div>
         </div>
       </nav>
+
+      {/* Main content */}
+      
     </div>
   );
 }
